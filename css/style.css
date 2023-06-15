@@ -28,6 +28,11 @@ body {
     color: var(--text-color);
 }
 
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -60,9 +65,28 @@ body {
     color: var(--main-color);
 }
 
-.menu-icon {
+#menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
+    
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;    
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
     
 }
