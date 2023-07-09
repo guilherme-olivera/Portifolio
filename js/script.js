@@ -36,7 +36,27 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 
-
-
-
 };
+
+/*========= SCROLL REVEAL ========*/
+/*-- ANIMAÇÃO DOS TEXTOS E IMAGENS --*/
+ScrollReveal({ 
+    // reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portifolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content h1, .about-content', { origin: 'right' });
+
+/*========= Typed JS ANIMATION NAME HOME ========*/
+const typed = new Typed('.multiple-text',{
+    strings: ['FullStack Developer', 'Youtuber'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true,
+});
