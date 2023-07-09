@@ -60,3 +60,13 @@ const typed = new Typed('.multiple-text',{
     backDelay: 1000,
     loop: true,
 });
+
+/*========= FAZ O DOWNLOAD DO CV ========*/
+document.getElementById('downloadButton').addEventListener('click', function() {
+    var link = document.createElement('a');
+    link.href = './image/cv/Guilherme_oliveira.pdf'; // Substitua pelo caminho do seu arquivo PDF
+    link.download = 'Guilherme_oliveira.pdf'; // Substitua pelo nome que deseja dar ao arquivo PDF
+    link.target = '_blank'; // Abre o link em uma nova aba
+    link.click(); // Aciona o clique no link
+  });
+  
