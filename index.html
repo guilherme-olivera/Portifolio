@@ -30,35 +30,50 @@
     <!-- home section design -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, It's Me</h3>
+            <h3>Olá, Eu sou</h3>
             <h1>Guilherme Oliveira</h1>
-            <h3>And I'm a <span>Software Developer</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, nulla! Fugiat assumenda officiis quam ab itaque accusantium, facere distinctio quo, veritatis enim molestias blanditiis expedita quos saepe ullam unde? Maiores.</p>
+            <h3>Sou <span class="multiple-text"></span></h3>
+            <p>Formado em Análise e Desenvolvimentos de Sistemas pela Universidade Pitágoras. <br/>
+                <!-- Atualmente trabalhando com Software Agrícola <br>
+                blanditiis expedita quos saepe ullam unde? Maiores.</p> -->
 
             <div class="social-media">
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/guilherme-olivera" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.youtube.com/@jornadadoprogramador/videos" target="_blank"><i class='bx bxl-youtube'></i></a>
+                <a href="https://www.instagram.com/jornadado.programador/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://www.linkedin.com/in/guilherme-oliveira-santos-346b07169/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href="#" id="downloadButton" class="btn">Download CV</a>
         </div>
 
         <div class="home-img">
-            <img src="./image/Home-amico.png" alt="400" width="550">
+            <img src="./image/euAvatar.png" alt="" width="550">
         </div>
     </section>
 
     <!-- About section design -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="./image/Home-Binary.png" alt="400" width="550">
+            <img src="./image/Home-Binary.png" alt="" width="550">
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Fullstack Developer!</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae cum eligendi qui quam nostrum quod amet vero ea laudantium nesciunt reiciendis veniam, earum quibusdam, recusandae consequatur debitis, velit sequi nemo eos facere eaque! Ea sint inventore sit recusandae velit officia, maxime quibusdam similique, quae voluptatibus eos.</p>
+            <p>Um profissional apaixonado por programação e tecnologia. <br/>
+                Com formação em Análise e Desenvolvimento de Sistemas, <br/>
+                encontrei minha vocação no mundo da programação. <br/>
+                Sou reconhecido por minha paixão e entusiasmo em <br/>
+                aprender e compartilhar conhecimentos.<br/>
+                <br/>
+                Desde o início da minha carreira, tenho me dedicado a superar<br/>
+                 desafios e aprimorar minhas habilidades como FullStack.<br/>
+                  Não temo os obstáculos que podem surgir no caminho, <br/>
+                  pois acredito que cada dificuldade é uma <br/>
+                  oportunidade de aprendizado e crescimento.<br/>
+                  <br/>
+                Através do meu canal no YouTube, busco compartilhar minha jornada como programador, <br/>
+                desde os primeiros passos até os projetos mais avançados. Sou um defensor da honestidade e confiança em meus vídeos</p>
             <a href="#" class="btn">Read More</a>
         </div>
     </section>
@@ -101,8 +116,8 @@
             <div class="portifolio-box">
                 <img src="image/band.png" alt="" >                
                 <div class="portifolio-layer">
-                    <h4>Web design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ducimus.</p>
+                    <h4>Mi Band</h4>
+                    <p>Mini bateria criada em HTML, CSS e Javascript </p>
                     <a href="https://guilherme-olivera.github.io/MiSound.github.io/" target="_blank"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
@@ -110,18 +125,18 @@
             <div class="portifolio-box">
                 <img src="image/Logindark.png" alt="">                
                 <div class="portifolio-layer">
-                    <h4>Web design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ducimus.</p>
+                    <h4>Tela Login</h4>
+                    <p>Criado com foco em tema Dark</p>
                     <a href="https://guilherme-olivera.github.io/TelaLogingithub.io/" target="_blank"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
 
             <div class="portifolio-box">
-                <img src="image/Astro.png" alt="">                
+                <img src="image/flappybird.png" alt="">             
                 <div class="portifolio-layer">
-                    <h4>Web design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ducimus.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>Flappy Bird</h4>
+                    <p>Jogo em javascript em contrução.</p>
+                    <a href="https://guilherme-olivera.github.io/FlappyBird.github.io/" target="_blank"><i class='bx bx-link-external' ></i></a>
                 </div>
             </div>
 
@@ -158,17 +173,26 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
+        <form action="https://formsubmit.co/guilherme.oliveirasantos@hotmail.com" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="Email address">
+                <input type="text" name="Name"placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://guilherme-olivera.github.io/portifolio.github.io/#home">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             </div>
-            <div class="input-box">
+            <!-- <div class="input-box">
                 <input type="number" placeholder="Mobile Number">
                 <input type="text" placeholder="Email subject">
+<<<<<<< HEAD
                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
+=======
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>                
+            </div> -->
+            <input type="submit" value="Send Messaage" class="btn">
+>>>>>>> 554bad541dc0e44abeb716abb7d2372efaaa6b2d
         </form>
     </section>
 
@@ -183,9 +207,14 @@
         </div>
     </footer>
 
+    <!-- scrool Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <!-- custom JS -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
