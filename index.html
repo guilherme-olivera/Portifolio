@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornada do Programador</title>
 
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom css -->
@@ -21,7 +23,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">Sobre</a>
-            <a href="#services">Serviços</a>
+            <a href="#services">Certificados</a>
             <a href="#portifolio">Projetos</a>
             <a href="#contact">Contato</a>
         </nav>
@@ -79,32 +81,94 @@
     </section>
 
     <!-- services section design -->
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
+    <section class="swiper mySwiper" id="services"> <!--  class="swiper mySwiper" -->
+        
+        <h2 class="heading">Meus <span>Certificados</span></h2>
 
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
+        <div class="swiper-wrapper">
+            <!-- First card -->
+            <div class="card swiper-slide">
+              <div class="card__image">
+                <img src="image/certificados/asp.net core.png" alt="card image">
+              </div>
+      
+              <div class="card__content">
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repellat blanditiis eum enim tempore id amet debitis ex repellendus at.</p>
-                <a href="#" class="btn">Read More</a>
+                <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                <a href="#" class="card_btn">View More</a>
+              </div>
             </div>
 
-            <div class="services-box">
-                <i class='bx bx-paint' ></i>
-                <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repellat blanditiis eum enim tempore id amet debitis ex repellendus at.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+            <!-- second card -->
+            <div class="card swiper-slide">
+                <div class="card__image">
+                  <img src="image/certificados/CSharp e orientação.png" alt="card image">
+                </div>
+        
+                <div class="card__content">
+                  <h3>Web Development</h3>
+                  <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                  <a href="#" class="card_btn">View More</a>
+                </div>
+              </div>
+              
+              <div class="card swiper-slide">
+                <div class="card__image">
+                  <img src="image/certificados/javascript-backend.png" alt="card image">
+                </div>
+        
+                <div class="card__content">
+                  <h3>Web Development</h3>
+                  <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                  <a href="#" class="card_btn">View More</a>
+                </div>
+              </div>             
 
-            <div class="services-box">
-                <i class='bx bx-bar-chart-alt' ></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repellat blanditiis eum enim tempore id amet debitis ex repellendus at.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
+              <div class="card swiper-slide">
+                <div class="card__image">
+                  <img src="image/certificados/oracle_database.png" alt="card image">
+                </div>
+        
+                <div class="card__content">
+                  <h3>Web Development</h3>
+                  <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                  <a href="#" class="card_btn">View More</a>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="card__image">
+                  <img src="image/certificados/orientaçãoobj.png" alt="card image">
+                </div>
+        
+                <div class="card__content">
+                  <h3>Web Development</h3>
+                  <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                  <a href="#" class="card_btn">View More</a>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="card__image">
+                  <img src="image/certificados/CsharpUdemy.jpg" alt="card image">
+                </div>
+        
+                <div class="card__content">
+                  <h3>Web Development</h3>
+                  <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                  <a href="#" class="card_btn">View More</a>
+                </div>
+              </div>
+            
+      
+          </div>
+        <!-- <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repellat blanditiis eum enim tempore id amet debitis ex repellendus at.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>            
+        </div> -->
 
     </section>
 
@@ -140,33 +204,7 @@
                 </div>
             </div>
 
-            <!-- <div class="portifolio-box">
-                <img src="image/portifolio4.jpg" alt="">                
-                <div class="portifolio-layer">
-                    <h4>Web design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ducimus.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portifolio-box">
-                <img src="image/portifolio5.jpg" alt="">                
-                <div class="portifolio-layer">
-                    <h4>Web design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ducimus.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-
-            <div class="portifolio-box">
-                <img src="image/portifolio6.jpg" alt="">                
-                <div class="portifolio-layer">
-                    <h4>Web design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ducimus.</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-        </div> -->
+           
     </section>
 
     <!-- Contact section design -->
@@ -181,17 +219,7 @@
                 <input type="hidden" name="_next" value="https://guilherme-olivera.github.io/portifolio.github.io/#home">
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             </div>
-            <input type="submit" value="Send Messaage" class="btn">
-            <!-- <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email subject">
-<<<<<<< HEAD
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-=======
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>                
-            </div> -->
+            <input type="submit" value="Send Messaage" class="btn">            
             
         </form>
     </section>
@@ -215,6 +243,30 @@
 
     <!-- custom JS -->
     <script src="js/script.js" defer></script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 7,
+        stretch: 50,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
 </body>
 
 </html>
