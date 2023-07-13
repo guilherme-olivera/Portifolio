@@ -194,18 +194,16 @@ span {
 /* ================== Services =================*/
 /* ------------------- SLIDER ----------------- */
 .swiper h2{
-    width: 100%;
-}
-.heading {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  
+  margin-top: 5rem;
 }
 
-.swiper-wrapper {
-    width: 100%;
-    height: 55em;
-    display: flex;
-    align-items: center;
+
+.swiper-wrapper {    
+  display: flex;  
+  align-items: center;  
+  gap: 2rem;    
+    
 }
 
 .card swiper-slide {
@@ -214,7 +212,7 @@ span {
   padding: 3rem 2rem ;
   border-radius: 2rem;
   text-align: center;
-  border: 0.2rem solid var(--bg-color);
+  border: 0.2rem solid var(--bg-color);  
   transition: 0.5s ease;
 }
 
@@ -222,7 +220,7 @@ span {
   filter: blur(1px);
 }
 
-.services-container .services-box:hover {
+.swiper-wrapper .card swiper-slide:hover {
   border-color: var(--main-color);
   transform: scale(1.02); /* faz o card aumentar junto ao hover */
 }
